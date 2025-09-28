@@ -1,0 +1,66 @@
+// Task_1
+
+let nm = prompt("Enter your name:");
+let a = true;
+while (a === true) {
+    let y = Number(prompt("Enter your age:"));
+    if (y >= 18) {
+        alert("Hello " + nm + ", you are eligible to vote ");
+    } else if (y < 18) {
+        alert("Sorry " + nm + ", you are not eligible to vote ");
+    }
+    a = confirm("Do you want to check again?");
+    if (a === false) {
+        alert("Goodbye!");
+        break;
+    }
+}
+
+
+
+// Task_2
+/*
+let username;
+let psd;
+let cnfm;
+var choice;
+username = prompt("Please enter your username");
+psd = prompt("Please enter the password");
+if (username == "raaj" && psd == "123456") {
+    cnfm = confirm("Do you want to borrow a book?");
+    if (cnfm == true) {
+        choice = prompt("1=Math, 2=Chemistry, 3=Appitude");
+        switch (choice) {
+            case "1":
+                alert("You have selected Math");
+                break;
+            case "2":
+                alert("You have selected Chemistry");
+                break;
+            case "3":
+                alert("you have selected Appitude");
+                break;
+            default:
+                alert("Invalid catagory!");
+        }
+    }
+    else {
+        alert("Maybe next time! Goodbye!");
+    }
+}
+else {
+    alert("Invalid login!");
+}*/
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="1.js"></script>
+</head>
+<body>
+    
+</body>
+</html>
