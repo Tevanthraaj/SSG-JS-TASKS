@@ -19,7 +19,7 @@ while (a === true) {
 
 
 // Task_2
-/*
+
 let username;
 let psd;
 let cnfm;
@@ -50,5 +50,5 @@ if (username == "raaj" && psd == "123456") {
 }
 else {
     alert("Invalid login!");
-}*/
+}
 
