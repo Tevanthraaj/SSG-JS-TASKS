@@ -1,0 +1,101 @@
+.header {
+    background-color: rgb(236, 233, 238);
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: #6b95ff;
+}
+.header button {
+    background-color: #457b9d;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100px;
+}
+.header button:hover {
+    background-color: #1d3557;
+}
+.register {
+    background-color: #ffffff   ;
+    padding: 20px;
+    border-radius: 5px;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+
+}
+
+.register h1 {
+    text-align: center;
+    color: #ff6b6b;
+}
+
+.register input {
+    /* display: block; */
+    /* margin: 10px auto; */
+    padding: 10px;
+    width: 200px;
+}
+.register button {
+    background-color: rgb(138, 112, 198);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.register button:hover {
+    background-color: #ff6b6b;
+}
+.questions {
+    background-color: #ede39890   ;
+    padding: 20px;
+    border-radius: 5px;
+    width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+.questions button{
+    width: 200px;
+    height: 40px;
+    background-color: #7d95b7;
+    border: none;
+    border-radius: 10px;
+}
+.result {
+    background-color: #ffffff   ;
+    padding: 20px;
+    border-radius: 5px;
+    width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+.question {
+    width: 500px;
+    text-align: left;
+    margin-left: 250px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px rgb(143, 143, 89);
+    background-color: rgba(243, 200, 200, 0.721);
+}
+.questions,
+.result {
+    display: none; /* Hide these sections initially */
+}
+
+.tablinks.active {
+    background-color: #4CAF50; /* Optional: highlight the active tab */
+    color: white;
+}
+
