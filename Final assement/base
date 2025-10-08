@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bstyle.css">
+</head>
+
+<body style="background-color: #f0f4f8;">
+    <div class="header">
+        <center>
+            <h1>Quiz Competition</h1>
+        </center>
+        <button  class="tablinks active" onclick="opentab(event,'register')">Register</button>
+        <button  class="tablinks" onclick="opentab(event,'questions')">Questions</button>
+        <button  class="tablinks" onclick="opentab(event,'result')">Result</button>
+    </div>
+    <br>
+    <div class="register">
+        <h1>Welcome to the Registration Page</h1>
+        <label>Name :&nbsp;&nbsp;<input type="text" class="reg" placeholder="Name" required></label><br><br>
+        <label>Email :&nbsp;&nbsp;<input type="email" class="reg" placeholder="Email" required></label><br><br>
+        <label>Age &nbsp;&nbsp;:&nbsp;&nbsp;<input type="number" class="reg" min="1" max="100" placeholder="Age" required></label><br><br>
+        <center><button class="reg" onclick="registerUser()">Register</button></center>
+    </div>
+    <div class="questions">
+        <h1>Welcome to the Questions Page</h1>
+        <p>Here you will find the quiz questions.</p>
+        <div class="question">
+            
+            <p>What is the capital of France?</p>
+            <input type="radio" class="answer" name="q1" value="Paris"> Paris<br>
+            <input type="radio" class="answer" name="q1" value="London"> London<br>
+            <input type="radio" class="answer" name="q1" value="Berlin"> Berlin<br>
+            <input type="radio" class="answer" name="q1" value="Madrid"> Madrid<br>
+
+        </div><br>
+        <div class="question">
+            
+            <p>What is 2 + 2?</p>
+            <input type="radio" class="answer" name="q2" value="3"> 3<br>
+            <input type="radio" class="answer" name="q2" value="4"> 4<br>
+            <input type="radio" class="answer" name="q2" value="5"> 5<br>
+            <input type="radio" class="answer" name="q2" value="6"> 6<br>
+        </div><br>
+        <div class="question">
+            
+            <p>What is the largest ocean on Earth?</p>
+            <input type="radio" class="answer" name="q3" value="Atlantic"> Atlantic<br>
+            <input type="radio" class="answer" name="q3" value="Indian"> Indian<br>
+            <input type="radio" class="answer" name="q3" value="Pacific"> Pacific<br>
+            <input type="radio" class="answer" name="q3" value="Arctic"> Arctic<br>
+        </div><br>
+        <div class="question">
+            <!-- <h3>Question 4</h3> -->
+            <p>Which planet is known as the Red Planet?</p>
+            <input type="radio" class="answer" name="q4" value="Earth"> Earth<br>
+            <input type="radio" class="answer" name="q4" value="Mars"> Mars<br>
+            <input type="radio" class="answer" name="q4" value="Jupiter"> Jupiter<br>
+            <input type="radio" class="answer" name="q4" value="Venus"> Venus<br>
+        </div><br>
+        <div class="question">
+            <!-- <h3>Question 5</h3> -->
+            <p>Who is known as the Father of Computers?</p>
+            <input type="radio" class="answer" name="q5" value="Charles Babbage"> Charles Babbage<br>
+            <input type="radio" class="answer" name="q5" value="Alan Turing"> Alan Turing<br>
+            <input type="radio" class="answer" name="q5" value="Bill Gates"> Bill Gates<br>
+            <input type="radio" class="answer" name="q5" value="Steve Jobs"> Steve Jobs<br>
+        </div><br>
+        <div class="question">
+
+            <!-- <h3>Question 6</h3> -->
+            <p>What is the capital city of Japan?</p>
+            <input type="radio" class="answer" name="q6" value="Seoul"> Seoul<br>
+            <input type="radio" class="answer" name="q6" value="Tokyo"> Tokyo<br>
+            <input type="radio" class="answer" name="q6" value="Beijing"> Beijing<br>
+            <input type="radio" class="answer" name="q6" value="Bangkok"> Bangkok<br>
+        </div><br>
+        <div class="question">
+            <!-- <h3>Question 7</h3> -->
+            <p>Which gas do humans need to survive?</p>
+            <input type="radio" class="answer" name="q7" value="Oxygen"> Oxygen<br>
+            <input type="radio" class="answer" name="q7" value="Carbon Dioxide"> Carbon Dioxide<br>
+            <input type="radio" class="answer" name="q7" value="Nitrogen"> Nitrogen<br>
+            <input type="radio" class="answer" name="q7" value="Helium"> Helium<br>
+        </div><br>
+        <div class="question">
+            <!-- <h3>Question 8</h3> -->
+            <p>Which is the smallest prime number?</p>
+            <input type="radio" class="answer" name="q8" value="1"> 1<br>
+            <input type="radio" class="answer" name="q8" value="2"> 2<br>
+            <input type="radio" class="answer" name="q8" value="3"> 3<br>
+            <input type="radio" class="answer" name="q8" value="5"> 5<br>
+        </div><br>
+        <div class="question">
+            <!-- <h3>Question 9</h3> -->
+            <p>Which country is famous for the Eiffel Tower?</p>
+            <input type="radio" class="answer" name="q9" value="France"> France<br>
+            <input type="radio" class="answer" name="q9" value="Italy"> Italy<br>
+            <input type="radio" class="answer" name="q9" value="Germany"> Germany<br>
+            <input type="radio" class="answer" name="q9" value="Spain"> Spain<br>
+        </div><br>
+        <div class="question">
+            <!-- <h3>Question 10</h3> -->
+            <p>Which is the fastest land animal?</p>
+            <input type="radio" class="answer" name="q10" value="Tiger"> Tiger<br>
+            <input type="radio" class="answer" name="q10" value="Cheetah"> Cheetah<br>
+            <input type="radio" class="answer" name="q10" value="Lion"> Lion<br>
+            <input type="radio" class="answer" name="q10" value="Horse"> Horse<br>
+        </div><br>
+        <center><button class="Submit" onclick="submitAnswers()">Submit Answers</button></center>
+    </div>
+    <div class="result">
+        <h1>Welcome to the Result Page</h1>
+        <p>Your quiz results will be displayed here.</p>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+
+</html>
